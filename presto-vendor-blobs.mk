@@ -18,162 +18,173 @@ VENDOR_DEVICE_FOLDER := vendor/pantech/presto/proprietary
 
 # Prebuilt libraries that are needed to build open-source libraries
 PRODUCT_COPY_FILES += \
-	$(VENDOR_DEVICE_FOLDER)/lib/libacdbloader.so:obj/lib/libacdbloader.so \
-	$(VENDOR_DEVICE_FOLDER)/lib/libacdbmapper.so:obj/lib/libacdbmapper.so \
-	$(VENDOR_DEVICE_FOLDER)/lib/libaudioalsa.so:obj/lib/libaudioalsa.so \
-	$(VENDOR_DEVICE_FOLDER)/lib/libqc-opt.so:obj/lib/libqc-opt.so \
-	$(VENDOR_DEVICE_FOLDER)/lib/libv8.so:obj/lib/libv8.so
+    $(VENDOR_DEVICE_FOLDER)/lib/libacdbloader.so:obj/lib/libacdbloader.so \
+    $(VENDOR_DEVICE_FOLDER)/lib/libacdbmapper.so:obj/lib/libacdbmapper.so \
+    $(VENDOR_DEVICE_FOLDER)/lib/libaudioalsa.so:obj/lib/libaudioalsa.so \
+    $(VENDOR_DEVICE_FOLDER)/lib/libqc-opt.so:obj/lib/libqc-opt.so \
+    $(VENDOR_DEVICE_FOLDER)/lib/libv8.so:obj/lib/libv8.so
 
-# Prebuilt libraries	
+# Prebuilt libraries
 PRODUCT_COPY_FILES += \
-	$(VENDOR_DEVICE_FOLDER)/lib/libbcc.so:system/lib/libbcc.so \
-	$(VENDOR_DEVICE_FOLDER)/lib/libdvm.so:system/lib/libdvm.so \
-	$(VENDOR_DEVICE_FOLDER)/lib/libgenlock.so:system/lib/libgenlock.so \
-	$(VENDOR_DEVICE_FOLDER)/lib/libmemalloc.so:system/lib/libmemalloc.so \
-	$(VENDOR_DEVICE_FOLDER)/lib/liboverlay.so:system/lib/liboverlay.so \
-	$(VENDOR_DEVICE_FOLDER)/lib/libQcomUI.so:system/lib/libQcomUI.so \
-	$(VENDOR_DEVICE_FOLDER)/lib/hw/gralloc.msm8660.so:system/lib/hw/gralloc.msm8660.so
+    $(VENDOR_DEVICE_FOLDER)/lib/libbcc.so:system/lib/libbcc.so \
+    $(VENDOR_DEVICE_FOLDER)/lib/libdvm.so:system/lib/libdvm.so \
+    $(VENDOR_DEVICE_FOLDER)/lib/libgenlock.so:system/lib/libgenlock.so \
+    $(VENDOR_DEVICE_FOLDER)/lib/libmemalloc.so:system/lib/libmemalloc.so \
+    $(VENDOR_DEVICE_FOLDER)/lib/liboverlay.so:system/lib/liboverlay.so \
+    $(VENDOR_DEVICE_FOLDER)/lib/libQcomUI.so:system/lib/libQcomUI.so \
+    $(VENDOR_DEVICE_FOLDER)/lib/hw/gralloc.msm8660.so:system/lib/hw/gralloc.msm8660.so
 
 # Prebuilt libraries from CodeAurora
 PRODUCT_COPY_FILES += \
-	$(VENDOR_DEVICE_FOLDER)/lib/libDivxDrm.so:system/lib/libDivxDrm.so \
-	$(VENDOR_DEVICE_FOLDER)/lib/libmm-color-convertor.so:system/lib/libmm-color-convertor.so \
-	$(VENDOR_DEVICE_FOLDER)/lib/libmmosal.so:system/lib/libmmosal.so \
-	$(VENDOR_DEVICE_FOLDER)/lib/libmmparser_divxdrmlib.so:system/lib/libmmparser_divxdrmlib.so \
-	$(VENDOR_DEVICE_FOLDER)/lib/libmmparser.so:system/lib/libmmparser.so \
-	$(VENDOR_DEVICE_FOLDER)/lib/libqc-opt.so:system/lib/libqc-opt.so \
-	$(VENDOR_DEVICE_FOLDER)/lib/libv8.so:system/lib/libv8.so
+    $(VENDOR_DEVICE_FOLDER)/lib/libDivxDrm.so:system/lib/libDivxDrm.so \
+    $(VENDOR_DEVICE_FOLDER)/lib/libmm-color-convertor.so:system/lib/libmm-color-convertor.so \
+    $(VENDOR_DEVICE_FOLDER)/lib/libmmosal.so:system/lib/libmmosal.so \
+    $(VENDOR_DEVICE_FOLDER)/lib/libmmparser_divxdrmlib.so:system/lib/libmmparser_divxdrmlib.so \
+    $(VENDOR_DEVICE_FOLDER)/lib/libmmparser.so:system/lib/libmmparser.so \
+    $(VENDOR_DEVICE_FOLDER)/lib/libqc-opt.so:system/lib/libqc-opt.so \
+    $(VENDOR_DEVICE_FOLDER)/lib/libv8.so:system/lib/libv8.so
 
-# Prebuilt libraries for CAF Chromium plug-ins
+# Adreno
 PRODUCT_COPY_FILES += \
-	$(VENDOR_DEVICE_FOLDER)/lib/libcneapiclient.so:system/lib/libcneapiclient.so \
-	$(VENDOR_DEVICE_FOLDER)/lib/libcneqmiutils.so:system/lib/libcneqmiutils.so \
-	$(VENDOR_DEVICE_FOLDER)/lib/libdiag.so:system/lib/libdiag.so \
-	$(VENDOR_DEVICE_FOLDER)/lib/libdnshostprio.so:system/lib/libdnshostprio.so \
-	$(VENDOR_DEVICE_FOLDER)/lib/libnetmonitor.so:system/lib/libnetmonitor.so \
-	$(VENDOR_DEVICE_FOLDER)/lib/libtcpfinaggr.so:system/lib/libtcpfinaggr.so \
-	$(VENDOR_DEVICE_FOLDER)/lib/pp_proc_plugin.so:system/lib/pp_proc_plugin.so \
-	$(VENDOR_DEVICE_FOLDER)/lib/qnet-plugin.so:system/lib/qnet-plugin.so \
-	$(VENDOR_DEVICE_FOLDER)/lib/tcp-connections.so:system/lib/tcp-connections.so
+    $(VENDOR_DEVICE_FOLDER)/etc/firmware/a225_pfp.fw:system/etc/firmware/a225_pfp.fw \
+    $(VENDOR_DEVICE_FOLDER)/etc/firmware/a225_pm4.fw:system/etc/firmware/a225_pm4.fw \
+    $(VENDOR_DEVICE_FOLDER)/etc/firmware/a225p5_pm4.fw:system/etc/firmware/a225p5_pm4.fw \
+    $(VENDOR_DEVICE_FOLDER)/etc/firmware/a300_pfp.fw:system/etc/firmware/a300_pfp.fw \
+    $(VENDOR_DEVICE_FOLDER)/etc/firmware/a300_pm4.fw:system/etc/firmware/a300_pm4.fw \
+    $(VENDOR_DEVICE_FOLDER)/etc/firmware/leia_pfp_470.fw:system/etc/firmware/leia_pfp_470.fw \
+    $(VENDOR_DEVICE_FOLDER)/etc/firmware/leia_pm4_470.fw:system/etc/firmware/leia_pm4_470.fw \
+    $(VENDOR_DEVICE_FOLDER)/etc/firmware/yamato_pfp.fw:system/etc/firmware/yamato_pfp.fw \
+    $(VENDOR_DEVICE_FOLDER)/etc/firmware/yamato_pm4.fw:system/etc/firmware/yamato_pm4.fw \
+    $(VENDOR_DEVICE_FOLDER)/lib/egl/eglsubAndroid.so:system/lib/egl/eglsubAndroid.so \
+    $(VENDOR_DEVICE_FOLDER)/lib/egl/libEGL_adreno200.so:system/lib/egl/libEGL_adreno200.so \
+    $(VENDOR_DEVICE_FOLDER)/lib/egl/libGLES_android.so:system/lib/egl/libGLES_android.so \
+    $(VENDOR_DEVICE_FOLDER)/lib/egl/libGLESv1_CM_adreno200.so:system/lib/egl/libGLESv1_CM_adreno200.so \
+    $(VENDOR_DEVICE_FOLDER)/lib/egl/libGLESv2_adreno200.so:system/lib/egl/libGLESv2_adreno200.so \
+    $(VENDOR_DEVICE_FOLDER)/lib/egl/libGLESv2S3D_adreno200.so:system/lib/egl/libGLESv2S3D_adreno200.so \
+    $(VENDOR_DEVICE_FOLDER)/lib/egl/libq3dtools_adreno200.so:system/lib/egl/libq3dtools_adreno200.so \
+    $(VENDOR_DEVICE_FOLDER)/lib/libc2d2_z180.so:system/lib/libc2d2_z180.so \
+    $(VENDOR_DEVICE_FOLDER)/lib/libC2D2.so:system/lib/libC2D2.so \
+    $(VENDOR_DEVICE_FOLDER)/lib/libgsl.so:system/lib/libgsl.so \
+    $(VENDOR_DEVICE_FOLDER)/lib/libOpenVG.so:system/lib/libOpenVG.so \
+    $(VENDOR_DEVICE_FOLDER)/lib/libsc-a2xx.so:system/lib/libsc-a2xx.so
 
-# All the blobs necessary for adreno
+# Audio
 PRODUCT_COPY_FILES += \
-	$(VENDOR_DEVICE_FOLDER)/etc/firmware/a225_pfp.fw:system/etc/firmware/a225_pfp.fw \
-	$(VENDOR_DEVICE_FOLDER)/etc/firmware/a225_pm4.fw:system/etc/firmware/a225_pm4.fw \
-	$(VENDOR_DEVICE_FOLDER)/etc/firmware/a225p5_pm4.fw:system/etc/firmware/a225p5_pm4.fw \
-	$(VENDOR_DEVICE_FOLDER)/etc/firmware/a300_pfp.fw:system/etc/firmware/a300_pfp.fw \
-	$(VENDOR_DEVICE_FOLDER)/etc/firmware/a300_pm4.fw:system/etc/firmware/a300_pm4.fw \
-	$(VENDOR_DEVICE_FOLDER)/etc/firmware/leia_pfp_470.fw:system/etc/firmware/leia_pfp_470.fw \
-	$(VENDOR_DEVICE_FOLDER)/etc/firmware/leia_pm4_470.fw:system/etc/firmware/leia_pm4_470.fw \
-	$(VENDOR_DEVICE_FOLDER)/etc/firmware/yamato_pfp.fw:system/etc/firmware/yamato_pfp.fw \
-	$(VENDOR_DEVICE_FOLDER)/etc/firmware/yamato_pm4.fw:system/etc/firmware/yamato_pm4.fw \
-	$(VENDOR_DEVICE_FOLDER)/lib/egl/eglsubAndroid.so:system/lib/egl/eglsubAndroid.so \
-	$(VENDOR_DEVICE_FOLDER)/lib/egl/libEGL_adreno200.so:system/lib/egl/libEGL_adreno200.so \
-	$(VENDOR_DEVICE_FOLDER)/lib/egl/libGLES_android.so:system/lib/egl/libGLES_android.so \
-	$(VENDOR_DEVICE_FOLDER)/lib/egl/libGLESv1_CM_adreno200.so:system/lib/egl/libGLESv1_CM_adreno200.so \
-	$(VENDOR_DEVICE_FOLDER)/lib/egl/libGLESv2_adreno200.so:system/lib/egl/libGLESv2_adreno200.so \
-	$(VENDOR_DEVICE_FOLDER)/lib/egl/libGLESv2S3D_adreno200.so:system/lib/egl/libGLESv2S3D_adreno200.so \
-	$(VENDOR_DEVICE_FOLDER)/lib/egl/libq3dtools_adreno200.so:system/lib/egl/libq3dtools_adreno200.so \
-	$(VENDOR_DEVICE_FOLDER)/lib/libc2d2_z180.so:system/lib/libc2d2_z180.so \
-	$(VENDOR_DEVICE_FOLDER)/lib/libC2D2.so:system/lib/libC2D2.so \
-	$(VENDOR_DEVICE_FOLDER)/lib/libgsl.so:system/lib/libgsl.so \
-	$(VENDOR_DEVICE_FOLDER)/lib/libOpenVG.so:system/lib/libOpenVG.so \
-	$(VENDOR_DEVICE_FOLDER)/lib/libsc-a2xx.so:system/lib/libsc-a2xx.so
+    $(VENDOR_DEVICE_FOLDER)/lib/libacdbloader.so:system/lib/libacdbloader.so \
+    $(VENDOR_DEVICE_FOLDER)/lib/libacdbmapper.so:system/lib/libacdbmapper.so \
+    $(VENDOR_DEVICE_FOLDER)/lib/libaudcal.so:system/lib/libaudcal.so \
+    $(VENDOR_DEVICE_FOLDER)/lib/libaudioalsa.so:system/lib/libaudioalsa.so \
+    $(VENDOR_DEVICE_FOLDER)/lib/libaudioparsers.so:system/lib/libaudioparsers.so \
+#    $(VENDOR_DEVICE_FOLDER)/lib/ib_iec_60958_61937.so:system/lib/lib_iec_60958_61937.so
 
-# Firmware	
+# bins
 PRODUCT_COPY_FILES += \
-	$(VENDOR_DEVICE_FOLDER)/etc/firmware/cyttsp_8660_ffa.hex:system/etc/firmware/cyttsp_8660_ffa.hex \
-	$(VENDOR_DEVICE_FOLDER)/etc/firmware/cyttsp_8660_fluid_p2.hex:system/etc/firmware/cyttsp_8660_fluid_p2.hex \
-	$(VENDOR_DEVICE_FOLDER)/etc/firmware/cyttsp_8660_fluid_p3.hex:system/etc/firmware/cyttsp_8660_fluid_p3.hex \
-	$(VENDOR_DEVICE_FOLDER)/etc/firmware/dsps_fluid.b00:system/etc/firmware/dsps_fluid.b00 \
-	$(VENDOR_DEVICE_FOLDER)/etc/firmware/dsps_fluid.b01:system/etc/firmware/dsps_fluid.b01 \
-	$(VENDOR_DEVICE_FOLDER)/etc/firmware/dsps_fluid.b02:system/etc/firmware/dsps_fluid.b02 \
-	$(VENDOR_DEVICE_FOLDER)/etc/firmware/dsps_fluid.b03:system/etc/firmware/dsps_fluid.b03 \
-	$(VENDOR_DEVICE_FOLDER)/etc/firmware/dsps_fluid.mdt:system/etc/firmware/dsps_fluid.mdt
-
-# Radio	
-PRODUCT_COPY_FILES += \
-	$(VENDOR_DEVICE_FOLDER)/bin/ks:system/bin/ks \
-	$(VENDOR_DEVICE_FOLDER)/bin/netmgrd:system/bin/netmgrd \
-	$(VENDOR_DEVICE_FOLDER)/bin/qcks:system/bin/qcks \
-	$(VENDOR_DEVICE_FOLDER)/bin/qmiproxy:system/bin/qmiproxy \
-	$(VENDOR_DEVICE_FOLDER)/bin/qmuxd:system/bin/qmuxd \
-	$(VENDOR_DEVICE_FOLDER)/bin/rild:system/bin/rild \
-	$(VENDOR_DEVICE_FOLDER)/bin/rmt_storage:system/bin/rmt_storage \
-	$(VENDOR_DEVICE_FOLDER)/lib/libdsi_netctrl.so:system/lib/libdsi_netctrl.so \
-	$(VENDOR_DEVICE_FOLDER)/lib/libdsutils.so:system/lib/libdsutils.so \
-	$(VENDOR_DEVICE_FOLDER)/lib/libidl.so:system/lib/libidl.so \
-	$(VENDOR_DEVICE_FOLDER)/lib/libnetmgr.so:system/lib/libnetmgr.so \
-	$(VENDOR_DEVICE_FOLDER)/lib/libqdi.so:system/lib/libqdi.so \
-	$(VENDOR_DEVICE_FOLDER)/lib/libqdp.so:system/lib/libqdp.so \
-	$(VENDOR_DEVICE_FOLDER)/lib/libqmi.so:system/lib/libqmi.so \
-	$(VENDOR_DEVICE_FOLDER)/lib/libqmiservices.so:system/lib/libqmiservices.so \
-	$(VENDOR_DEVICE_FOLDER)/lib/libqueue.so:system/lib/libqueue.so \
-	$(VENDOR_DEVICE_FOLDER)/lib/libreference-ril.so:system/lib/libreference-ril.so \
-	$(VENDOR_DEVICE_FOLDER)/lib/libril-qc-qmi-1.so:system/lib/libril-qc-qmi-1.so \
-	$(VENDOR_DEVICE_FOLDER)/lib/libril-qcril-hook-oem.so:system/lib/libril-qcril-hook-oem.so \
-	$(VENDOR_DEVICE_FOLDER)/lib/libril.so:system/lib/libril.so
-
-#bins	
-PRODUCT_COPY_FILES += \
-	$(VENDOR_DEVICE_FOLDER)/bin/battery_charging:system/bin/battery_charging \
-	$(VENDOR_DEVICE_FOLDER)/bin/BCM43291A0_003.001.013.0141.0149.ORC.hcd:system/bin/BCM43291A0_003.001.013.0141.0149.ORC.hcd \
-	$(VENDOR_DEVICE_FOLDER)/bin/bridgemgrd:system/bin/bridgemgrd \
-	$(VENDOR_DEVICE_FOLDER)/bin/btnvtool:system/bin/btnvtool \
-	$(VENDOR_DEVICE_FOLDER)/bin/ds_fmc_appd:system/bin/ds_fmc_appd \
-	$(VENDOR_DEVICE_FOLDER)/bin/mpdecision:system/bin/mpdecision \
-	$(VENDOR_DEVICE_FOLDER)/bin/port-bridge:system/bin/port-bridge
-
-# Audio	
-PRODUCT_COPY_FILES += \
-	$(VENDOR_DEVICE_FOLDER)/lib/libacdbloader.so:system/lib/libacdbloader.so \
-	$(VENDOR_DEVICE_FOLDER)/lib/libacdbmapper.so:system/lib/libacdbmapper.so \
-	$(VENDOR_DEVICE_FOLDER)/lib/libaudcal.so:system/lib/libaudcal.so \
-	$(VENDOR_DEVICE_FOLDER)/lib/libaudioalsa.so:system/lib/libaudioalsa.so \
-	$(VENDOR_DEVICE_FOLDER)/lib/libaudioparsers.so:system/lib/libaudioparsers.so
+    $(VENDOR_DEVICE_FOLDER)/bin/battery_charging:system/bin/battery_charging \
+    $(VENDOR_DEVICE_FOLDER)/bin/bridgemgrd:system/bin/bridgemgrd \
+    $(VENDOR_DEVICE_FOLDER)/bin/btnvtool:system/bin/btnvtool \
+    $(VENDOR_DEVICE_FOLDER)/bin/ds_fmc_appd:system/bin/ds_fmc_appd \
+    $(VENDOR_DEVICE_FOLDER)/bin/port-bridge:system/bin/port-bridge
 
 # Camera
 PRODUCT_COPY_FILES += \
-	$(VENDOR_DEVICE_FOLDER)/lib/hw/camera.msm8660.so:system/lib/hw/camera.msm8660.so \
-	$(VENDOR_DEVICE_FOLDER)/lib/libgemini.so:system/lib/libgemini.so \
-	$(VENDOR_DEVICE_FOLDER)/lib/libmmipl.so:system/lib/libmmipl.so \
-	$(VENDOR_DEVICE_FOLDER)/lib/libmmjpeg.so:system/lib/libmmjpeg.so \
-	$(VENDOR_DEVICE_FOLDER)/lib/libmmmpo.so:system/lib/libmmmpo.so \
-	$(VENDOR_DEVICE_FOLDER)/lib/libmmstereo.so:system/lib/libmmstereo.so \
-	$(VENDOR_DEVICE_FOLDER)/lib/liboemcamera.so:system/lib/liboemcamera.so
+    $(VENDOR_DEVICE_FOLDER)/lib/hw/camera.msm8660.so:system/lib/hw/camera.msm8660.so \
+    $(VENDOR_DEVICE_FOLDER)/lib/libgemini.so:system/lib/libgemini.so \
+    $(VENDOR_DEVICE_FOLDER)/lib/libmmipl.so:system/lib/libmmipl.so \
+    $(VENDOR_DEVICE_FOLDER)/lib/libmmjpeg.so:system/lib/libmmjpeg.so \
+    $(VENDOR_DEVICE_FOLDER)/lib/libmmmpo.so:system/lib/libmmmpo.so \
+    $(VENDOR_DEVICE_FOLDER)/lib/libmmstereo.so:system/lib/libmmstereo.so \
+    $(VENDOR_DEVICE_FOLDER)/lib/liboemcamera.so:system/lib/liboemcamera.so \
+    $(VENDOR_DEVICE_FOLDER)/lib/libOlaEngine.so:system/lib/libOlaEngine.so
 
-#gps	
+# Chromatix
 PRODUCT_COPY_FILES += \
-	$(VENDOR_DEVICE_FOLDER)/lib/libcommondefs.so:system/lib/libcommondefs.so \
-	$(VENDOR_DEVICE_FOLDER)/lib/libgps.utils.so:system/lib/libgps.utils.so \
-	$(VENDOR_DEVICE_FOLDER)/lib/libloc_adapter.so:system/lib/libloc_adapter.so \
-	$(VENDOR_DEVICE_FOLDER)/lib/libloc_api-rpc-qc.so:system/lib/libloc_api-rpc-qc.so \
-	$(VENDOR_DEVICE_FOLDER)/lib/libloc_eng.so:system/lib/libloc_eng.so \
-	$(VENDOR_DEVICE_FOLDER)/lib/liboncrpc.so:system/lib/liboncrpc.so
+    $(VENDOR_DEVICE_FOLDER)/lib/libchromatix_imx074_default_video.so:system/lib/libchromatix_imx074_default_video.so \
+    $(VENDOR_DEVICE_FOLDER)/lib/libchromatix_imx074_preview.so:system/lib/libchromatix_imx074_preview.so \
+    $(VENDOR_DEVICE_FOLDER)/lib/libchromatix_imx074_zsl.so:system/lib/libchromatix_imx074_zsl.so
 
-#wifi	
+# Chromium plug-ins
 PRODUCT_COPY_FILES += \
-	$(VENDOR_DEVICE_FOLDER)/etc/wifi/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf \
-	$(VENDOR_DEVICE_FOLDER)/etc/wl/bcm43291_apsta.bin:system/etc/wl/bcm43291_apsta.bin \
-	$(VENDOR_DEVICE_FOLDER)/etc/wl/bcm43291_mfg.bin:system/etc/wl/bcm43291_mfg.bin \
-	$(VENDOR_DEVICE_FOLDER)/etc/wl/bcm43291_p2p.bin:system/etc/wl/bcm43291_p2p.bin \
-	$(VENDOR_DEVICE_FOLDER)/etc/wl/bcm43291.bin:system/etc/wl/bcm43291.bin \
-	$(VENDOR_DEVICE_FOLDER)/etc/wl/nvram.txt:system/etc/wl/nvram.txt
+    $(VENDOR_DEVICE_FOLDER)/lib/libcneapiclient.so:system/lib/libcneapiclient.so \
+    $(VENDOR_DEVICE_FOLDER)/lib/libcneqmiutils.so:system/lib/libcneqmiutils.so \
+    $(VENDOR_DEVICE_FOLDER)/lib/libdiag.so:system/lib/libdiag.so \
+    $(VENDOR_DEVICE_FOLDER)/lib/libdnshostprio.so:system/lib/libdnshostprio.so \
+    $(VENDOR_DEVICE_FOLDER)/lib/libnetmonitor.so:system/lib/libnetmonitor.so \
+    $(VENDOR_DEVICE_FOLDER)/lib/libtcpfinaggr.so:system/lib/libtcpfinaggr.so \
+    $(VENDOR_DEVICE_FOLDER)/lib/pp_proc_plugin.so:system/lib/pp_proc_plugin.so \
+    $(VENDOR_DEVICE_FOLDER)/lib/qnet-plugin.so:system/lib/qnet-plugin.so \
+    $(VENDOR_DEVICE_FOLDER)/lib/tcp-connections.so:system/lib/tcp-connections.so
 
-#sky	
+# CPU management
 PRODUCT_COPY_FILES += \
-	$(VENDOR_DEVICE_FOLDER)/lib/libsky_access_nand.so:system/lib/libsky_access_nand.so \
-	$(VENDOR_DEVICE_FOLDER)/lib/libsky_aprlib.so:system/lib/libsky_aprlib.so \
-	$(VENDOR_DEVICE_FOLDER)/lib/libsky_bluetooth.so:system/lib/libsky_bluetooth.so \
-	$(VENDOR_DEVICE_FOLDER)/lib/libsky_ctrl_drv.so:system/lib/libsky_ctrl_drv.so \
-	$(VENDOR_DEVICE_FOLDER)/lib/libsky_dload.so:system/lib/libsky_dload.so \
-	$(VENDOR_DEVICE_FOLDER)/lib/libsky_fota_jni.so:system/lib/libsky_fota_jni.so \
-	$(VENDOR_DEVICE_FOLDER)/lib/libsky_fota_redbend.so:system/lib/libsky_fota_redbend.so \
-	$(VENDOR_DEVICE_FOLDER)/lib/libsky_fota.so:system/lib/libsky_fota.so \
-	$(VENDOR_DEVICE_FOLDER)/lib/libsky_rawdata.so:system/lib/libsky_rawdata.so \
-	$(VENDOR_DEVICE_FOLDER)/lib/libskyreset.so:system/lib/libskyreset.so \
-	$(VENDOR_DEVICE_FOLDER)/lib/libsky_rftest.so:system/lib/libsky_rftest.so \
-	$(VENDOR_DEVICE_FOLDER)/lib/libskytestclient.so:system/lib/libskytestclient.so \
-#	$(VENDOR_DEVICE_FOLDER)/lib/libsky_touch.so:system/lib/libsky_touch.so \
-	$(VENDOR_DEVICE_FOLDER)/lib/libsky_wifi.so:system/lib/libsky_wifi.so
+    $(VENDOR_DEVICE_FOLDER)/bin/mpdecision:system/bin/mpdecision
+
+# Firmware
+PRODUCT_COPY_FILES += \
+    $(VENDOR_DEVICE_FOLDER)/etc/firmware/cyttsp_8660_ffa.hex:system/etc/firmware/cyttsp_8660_ffa.hex \
+    $(VENDOR_DEVICE_FOLDER)/etc/firmware/cyttsp_8660_fluid_p2.hex:system/etc/firmware/cyttsp_8660_fluid_p2.hex \
+    $(VENDOR_DEVICE_FOLDER)/etc/firmware/cyttsp_8660_fluid_p3.hex:system/etc/firmware/cyttsp_8660_fluid_p3.hex \
+    $(VENDOR_DEVICE_FOLDER)/etc/firmware/dsps_fluid.b00:system/etc/firmware/dsps_fluid.b00 \
+    $(VENDOR_DEVICE_FOLDER)/etc/firmware/dsps_fluid.b01:system/etc/firmware/dsps_fluid.b01 \
+    $(VENDOR_DEVICE_FOLDER)/etc/firmware/dsps_fluid.b02:system/etc/firmware/dsps_fluid.b02 \
+    $(VENDOR_DEVICE_FOLDER)/etc/firmware/dsps_fluid.b03:system/etc/firmware/dsps_fluid.b03 \
+    $(VENDOR_DEVICE_FOLDER)/etc/firmware/dsps_fluid.mdt:system/etc/firmware/dsps_fluid.mdt
+
+# gps
+PRODUCT_COPY_FILES += \
+    $(VENDOR_DEVICE_FOLDER)/lib/libcommondefs.so:system/lib/libcommondefs.so \
+    $(VENDOR_DEVICE_FOLDER)/lib/libgps.utils.so:system/lib/libgps.utils.so \
+    $(VENDOR_DEVICE_FOLDER)/lib/libloc_adapter.so:system/lib/libloc_adapter.so \
+    $(VENDOR_DEVICE_FOLDER)/lib/libloc_api-rpc-qc.so:system/lib/libloc_api-rpc-qc.so \
+    $(VENDOR_DEVICE_FOLDER)/lib/libloc_eng.so:system/lib/libloc_eng.so \
+    $(VENDOR_DEVICE_FOLDER)/lib/liboncrpc.so:system/lib/liboncrpc.so
+
+# Radio
+PRODUCT_COPY_FILES += \
+    $(VENDOR_DEVICE_FOLDER)/bin/ks:system/bin/ks \
+    $(VENDOR_DEVICE_FOLDER)/bin/netmgrd:system/bin/netmgrd \
+    $(VENDOR_DEVICE_FOLDER)/bin/qcks:system/bin/qcks \
+    $(VENDOR_DEVICE_FOLDER)/bin/qmiproxy:system/bin/qmiproxy \
+    $(VENDOR_DEVICE_FOLDER)/bin/qmuxd:system/bin/qmuxd \
+    $(VENDOR_DEVICE_FOLDER)/bin/rild:system/bin/rild \
+    $(VENDOR_DEVICE_FOLDER)/bin/rmt_storage:system/bin/rmt_storage \
+    $(VENDOR_DEVICE_FOLDER)/lib/libdsi_netctrl.so:system/lib/libdsi_netctrl.so \
+    $(VENDOR_DEVICE_FOLDER)/lib/libdsutils.so:system/lib/libdsutils.so \
+    $(VENDOR_DEVICE_FOLDER)/lib/libidl.so:system/lib/libidl.so \
+    $(VENDOR_DEVICE_FOLDER)/lib/libnetmgr.so:system/lib/libnetmgr.so \
+    $(VENDOR_DEVICE_FOLDER)/lib/libqdi.so:system/lib/libqdi.so \
+    $(VENDOR_DEVICE_FOLDER)/lib/libqdp.so:system/lib/libqdp.so \
+    $(VENDOR_DEVICE_FOLDER)/lib/libqmi.so:system/lib/libqmi.so \
+    $(VENDOR_DEVICE_FOLDER)/lib/libqmiservices.so:system/lib/libqmiservices.so \
+    $(VENDOR_DEVICE_FOLDER)/lib/libqueue.so:system/lib/libqueue.so \
+    $(VENDOR_DEVICE_FOLDER)/lib/libreference-ril.so:system/lib/libreference-ril.so \
+    $(VENDOR_DEVICE_FOLDER)/lib/libril-qc-qmi-1.so:system/lib/libril-qc-qmi-1.so \
+    $(VENDOR_DEVICE_FOLDER)/lib/libril-qcril-hook-oem.so:system/lib/libril-qcril-hook-oem.so \
+    $(VENDOR_DEVICE_FOLDER)/lib/libril.so:system/lib/libril.so
+
+# wifi
+PRODUCT_COPY_FILES += \
+    $(VENDOR_DEVICE_FOLDER)/etc/wifi/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf \
+    $(VENDOR_DEVICE_FOLDER)/etc/wl/bcm43291_apsta.bin:system/etc/wl/bcm43291_apsta.bin \
+    $(VENDOR_DEVICE_FOLDER)/etc/wl/bcm43291_mfg.bin:system/etc/wl/bcm43291_mfg.bin \
+    $(VENDOR_DEVICE_FOLDER)/etc/wl/bcm43291_p2p.bin:system/etc/wl/bcm43291_p2p.bin \
+    $(VENDOR_DEVICE_FOLDER)/etc/wl/bcm43291.bin:system/etc/wl/bcm43291.bin \
+    $(VENDOR_DEVICE_FOLDER)/etc/wl/nvram.txt:system/etc/wl/nvram.txt \
+    $(VENDOR_DEVICE_FOLDER)/lib/libhardware_legacy.so:system/lib/libhardware_legacy.so
+
+# sky
+PRODUCT_COPY_FILES += \
+    $(VENDOR_DEVICE_FOLDER)/lib/libsky_access_nand.so:system/lib/libsky_access_nand.so \
+    $(VENDOR_DEVICE_FOLDER)/lib/libsky_aprlib.so:system/lib/libsky_aprlib.so \
+    $(VENDOR_DEVICE_FOLDER)/lib/libsky_bluetooth.so:system/lib/libsky_bluetooth.so \
+    $(VENDOR_DEVICE_FOLDER)/lib/libsky_ctrl_drv.so:system/lib/libsky_ctrl_drv.so \
+    $(VENDOR_DEVICE_FOLDER)/lib/libsky_dload.so:system/lib/libsky_dload.so \
+    $(VENDOR_DEVICE_FOLDER)/lib/libsky_fota_jni.so:system/lib/libsky_fota_jni.so \
+    $(VENDOR_DEVICE_FOLDER)/lib/libsky_fota_redbend.so:system/lib/libsky_fota_redbend.so \
+    $(VENDOR_DEVICE_FOLDER)/lib/libsky_fota.so:system/lib/libsky_fota.so \
+    $(VENDOR_DEVICE_FOLDER)/lib/libsky_rawdata.so:system/lib/libsky_rawdata.so \
+    $(VENDOR_DEVICE_FOLDER)/lib/libskyreset.so:system/lib/libskyreset.so \
+    $(VENDOR_DEVICE_FOLDER)/lib/libsky_rftest.so:system/lib/libsky_rftest.so \
+    $(VENDOR_DEVICE_FOLDER)/lib/libskytestclient.so:system/lib/libskytestclient.so \
+    $(VENDOR_DEVICE_FOLDER)/lib/libsky_wifi.so:system/lib/libsky_wifi.so
+#   $(VENDOR_DEVICE_FOLDER)/lib/libsky_touch.so:system/lib/libsky_touch.so \
 
