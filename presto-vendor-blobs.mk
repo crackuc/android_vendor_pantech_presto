@@ -26,13 +26,13 @@ PRODUCT_COPY_FILES += \
 
 # Prebuilt libraries
 PRODUCT_COPY_FILES += \
-    $(VENDOR_DEVICE_FOLDER)/lib/libbcc.so:system/lib/libbcc.so \
-    $(VENDOR_DEVICE_FOLDER)/lib/libdvm.so:system/lib/libdvm.so \
+#   $(VENDOR_DEVICE_FOLDER)/lib/libbcc.so:system/lib/libbcc.so \
+#   $(VENDOR_DEVICE_FOLDER)/lib/libdvm.so:system/lib/libdvm.so \
     $(VENDOR_DEVICE_FOLDER)/lib/libgenlock.so:system/lib/libgenlock.so \
-    $(VENDOR_DEVICE_FOLDER)/lib/libmemalloc.so:system/lib/libmemalloc.so \
-    $(VENDOR_DEVICE_FOLDER)/lib/liboverlay.so:system/lib/liboverlay.so \
+#   $(VENDOR_DEVICE_FOLDER)/lib/libmemalloc.so:system/lib/libmemalloc.so \
+#   $(VENDOR_DEVICE_FOLDER)/lib/liboverlay.so:system/lib/liboverlay.so \
     $(VENDOR_DEVICE_FOLDER)/lib/libQcomUI.so:system/lib/libQcomUI.so \
-    $(VENDOR_DEVICE_FOLDER)/lib/hw/gralloc.msm8660.so:system/lib/hw/gralloc.msm8660.so
+#   $(VENDOR_DEVICE_FOLDER)/lib/hw/gralloc.msm8660.so:system/lib/hw/gralloc.msm8660.so
 
 # Prebuilt libraries from CodeAurora
 PRODUCT_COPY_FILES += \
@@ -75,7 +75,7 @@ PRODUCT_COPY_FILES += \
     $(VENDOR_DEVICE_FOLDER)/lib/libaudcal.so:system/lib/libaudcal.so \
     $(VENDOR_DEVICE_FOLDER)/lib/libaudioalsa.so:system/lib/libaudioalsa.so \
     $(VENDOR_DEVICE_FOLDER)/lib/libaudioparsers.so:system/lib/libaudioparsers.so \
-#    $(VENDOR_DEVICE_FOLDER)/lib/ib_iec_60958_61937.so:system/lib/lib_iec_60958_61937.so
+#   $(VENDOR_DEVICE_FOLDER)/lib/ib_iec_60958_61937.so:system/lib/lib_iec_60958_61937.so
 
 # bins
 PRODUCT_COPY_FILES += \
