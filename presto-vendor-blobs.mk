@@ -133,6 +133,13 @@ PRODUCT_COPY_FILES += \
     $(VENDOR_DEVICE_FOLDER)/lib/libloc_eng.so:system/lib/libloc_eng.so \
     $(VENDOR_DEVICE_FOLDER)/lib/liboncrpc.so:system/lib/liboncrpc.so
 
+# Mediaserver
+PRODUCT_COPY_FILES += \
+    $(VENDOR_DEVICE_FOLDER)/lib/libdsm.so:system/lib/libdsm.so \
+    $(VENDOR_DEVICE_FOLDER)/lib/libnv.so:system/lib/libnv.so \
+    $(VENDOR_DEVICE_FOLDER)/lib/liboem_rapi.so:system/lib/liboem_rapi.so \
+    $(VENDOR_DEVICE_FOLDER)/lib/liboem_rapi_fusion.so:liboem_rapi_fusion.so
+
 # Radio
 PRODUCT_COPY_FILES += \
     $(VENDOR_DEVICE_FOLDER)/bin/ks:system/bin/ks \
