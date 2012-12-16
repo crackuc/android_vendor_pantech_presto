@@ -26,13 +26,8 @@ PRODUCT_COPY_FILES += \
 
 # Prebuilt libraries
 PRODUCT_COPY_FILES += \
-#   $(VENDOR_DEVICE_FOLDER)/lib/libbcc.so:system/lib/libbcc.so \
-#   $(VENDOR_DEVICE_FOLDER)/lib/libdvm.so:system/lib/libdvm.so \
     $(VENDOR_DEVICE_FOLDER)/lib/libgenlock.so:system/lib/libgenlock.so \
-#   $(VENDOR_DEVICE_FOLDER)/lib/libmemalloc.so:system/lib/libmemalloc.so \
-#   $(VENDOR_DEVICE_FOLDER)/lib/liboverlay.so:system/lib/liboverlay.so \
-    $(VENDOR_DEVICE_FOLDER)/lib/libQcomUI.so:system/lib/libQcomUI.so \
-#   $(VENDOR_DEVICE_FOLDER)/lib/hw/gralloc.msm8660.so:system/lib/hw/gralloc.msm8660.so
+    $(VENDOR_DEVICE_FOLDER)/lib/libQcomUI.so:system/lib/libQcomUI.so
 
 # Prebuilt libraries from CodeAurora
 PRODUCT_COPY_FILES += \
