@@ -133,6 +133,14 @@ PRODUCT_COPY_FILES += \
     $(VENDOR_DEVICE_FOLDER)/lib/libloc_eng.so:system/lib/libloc_eng.so \
     $(VENDOR_DEVICE_FOLDER)/lib/liboncrpc.so:system/lib/liboncrpc.so
 
+# HAL
+PRODUCT_COPY_FILES += \
+    $(VENDOR_DEVICE_FOLDER)/lib/hw/copybit.msm8660.so:system/lib/hw/copybit.msm8660.so \
+    $(VENDOR_DEVICE_FOLDER)/lib/hw/gralloc.default.so:system/lib/hw/gralloc.default.so \
+    $(VENDOR_DEVICE_FOLDER)/lib/hw/gralloc.msm8660.so:system/lib/hw/gralloc.msm8660.so \
+    $(VENDOR_DEVICE_FOLDER)/lib/hw/lights.msm8660.so:system/lib/hw/lights.msm8660.so \
+    $(VENDOR_DEVICE_FOLDER)/lib/hw/sensors.msm8660.so:system/lib/hw/sensors.msm8660.so
+
 # Mediaserver
 PRODUCT_COPY_FILES += \
     $(VENDOR_DEVICE_FOLDER)/lib/libdsm.so:system/lib/libdsm.so \
