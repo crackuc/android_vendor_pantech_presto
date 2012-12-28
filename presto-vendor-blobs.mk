@@ -21,8 +21,7 @@ PRODUCT_COPY_FILES += \
     $(VENDOR_DEVICE_FOLDER)/lib/libacdbloader.so:obj/lib/libacdbloader.so \
     $(VENDOR_DEVICE_FOLDER)/lib/libacdbmapper.so:obj/lib/libacdbmapper.so \
     $(VENDOR_DEVICE_FOLDER)/lib/libaudioalsa.so:obj/lib/libaudioalsa.so \
-    $(VENDOR_DEVICE_FOLDER)/lib/libqc-opt.so:obj/lib/libqc-opt.so \
-    $(VENDOR_DEVICE_FOLDER)/lib/libv8.so:obj/lib/libv8.so
+    $(VENDOR_DEVICE_FOLDER)/lib/libqc-opt.so:obj/lib/libqc-opt.so
 
 # Prebuilt libraries
 PRODUCT_COPY_FILES += \
@@ -70,15 +69,25 @@ PRODUCT_COPY_FILES += \
     $(VENDOR_DEVICE_FOLDER)/lib/libaudcal.so:system/lib/libaudcal.so \
     $(VENDOR_DEVICE_FOLDER)/lib/libaudioalsa.so:system/lib/libaudioalsa.so \
     $(VENDOR_DEVICE_FOLDER)/lib/libaudioparsers.so:system/lib/libaudioparsers.so \
-#   $(VENDOR_DEVICE_FOLDER)/lib/ib_iec_60958_61937.so:system/lib/lib_iec_60958_61937.so
+    $(VENDOR_DEVICE_FOLDER)/lib/lib_iec_60958_61937.so:system/lib/lib_iec_60958_61937.so
 
 # bins
 PRODUCT_COPY_FILES += \
+    $(VENDOR_DEVICE_FOLDER)/bin/ATFWD-daemon:system/bin/ATFWD-daemon \
     $(VENDOR_DEVICE_FOLDER)/bin/battery_charging:system/bin/battery_charging \
     $(VENDOR_DEVICE_FOLDER)/bin/bridgemgrd:system/bin/bridgemgrd \
     $(VENDOR_DEVICE_FOLDER)/bin/btnvtool:system/bin/btnvtool \
+    $(VENDOR_DEVICE_FOLDER)/bin/dalvikvm:system/bin/dalvikvm \
     $(VENDOR_DEVICE_FOLDER)/bin/ds_fmc_appd:system/bin/ds_fmc_appd \
-    $(VENDOR_DEVICE_FOLDER)/bin/port-bridge:system/bin/port-bridge
+    $(VENDOR_DEVICE_FOLDER)/bin/e2fsck:system/bin/e2fsck \
+    $(VENDOR_DEVICE_FOLDER)/bin/hci_qcomm_init:system/bin/hci_qcomm_init \
+    $(VENDOR_DEVICE_FOLDER)/bin/mm-qcamera-daemon:system/bin/mm-qcamera-daemon \
+    $(VENDOR_DEVICE_FOLDER)/bin/nl_listener:system/bin/nl_listener \
+    $(VENDOR_DEVICE_FOLDER)/bin/port-bridge:system/bin/port-bridge \
+    $(VENDOR_DEVICE_FOLDER)/bin/qseecomd:system/bin/qseecomd \
+    $(VENDOR_DEVICE_FOLDER)/bin/radish:system/bin/radish \
+    $(VENDOR_DEVICE_FOLDER)/bin/thermald:system/bin/thermald \
+    $(VENDOR_DEVICE_FOLDER)/bin/v4l2-qcamera-app:system/bin/v4l2-qcamera-app
 
 # Camera
 PRODUCT_COPY_FILES += \
@@ -86,10 +95,33 @@ PRODUCT_COPY_FILES += \
     $(VENDOR_DEVICE_FOLDER)/lib/libgemini.so:system/lib/libgemini.so \
     $(VENDOR_DEVICE_FOLDER)/lib/libmmipl.so:system/lib/libmmipl.so \
     $(VENDOR_DEVICE_FOLDER)/lib/libmmjpeg.so:system/lib/libmmjpeg.so \
+    $(VENDOR_DEVICE_FOLDER)/lib/libmmjps.so:system/lib/libmmjps.so \
     $(VENDOR_DEVICE_FOLDER)/lib/libmmmpo.so:system/lib/libmmmpo.so \
+    $(VENDOR_DEVICE_FOLDER)/lib/libmmmpod.so:system/lib/libmmmpod.so \
     $(VENDOR_DEVICE_FOLDER)/lib/libmmstereo.so:system/lib/libmmstereo.so \
+    $(VENDOR_DEVICE_FOLDER)/lib/libmmstillomx.so:system/lib/libmmstillomx.so \
     $(VENDOR_DEVICE_FOLDER)/lib/liboemcamera.so:system/lib/liboemcamera.so \
     $(VENDOR_DEVICE_FOLDER)/lib/libOlaEngine.so:system/lib/libOlaEngine.so
+
+PRODUCT_COPY_FILES += \
+    $(VENDOR_DEVICE_FOLDER)/lib/libcamera_client.so:system/lib/libcamera_client.so \
+    $(VENDOR_DEVICE_FOLDER)/lib/libcameraservice.so:system/lib/libcameraservice.so \
+    $(VENDOR_DEVICE_FOLDER)/lib/libCommandSvc.so:system/lib/libCommandSvc.so \
+    $(VENDOR_DEVICE_FOLDER)/lib/libconfigdb.so:system/lib/libconfigdb.so \
+    $(VENDOR_DEVICE_FOLDER)/lib/libdrmdiag.so:system/lib/libdrmdiag.so \
+    $(VENDOR_DEVICE_FOLDER)/lib/libdrmfs.so:system/lib/libdrmfs.so \
+    $(VENDOR_DEVICE_FOLDER)/lib/libdrmtime.so:system/lib/libdrmtime.so \
+    $(VENDOR_DEVICE_FOLDER)/lib/libdsprofile.so:system/lib/libdsprofile.so \
+    $(VENDOR_DEVICE_FOLDER)/lib/libdss.so:system/lib/libdss.so \
+    $(VENDOR_DEVICE_FOLDER)/lib/libdsucsd.so:system/lib/libdsucsd.so \
+    $(VENDOR_DEVICE_FOLDER)/lib/libI420colorconvert.so:system/lib/libI420colorconvert.so \
+    $(VENDOR_DEVICE_FOLDER)/lib/libimage-jpeg-dec-omx-comp.so:system/lib/libimage-jpeg-dec-omx-comp.so \
+    $(VENDOR_DEVICE_FOLDER)/lib/libimage-jpeg-enc-omx-comp.so:system/lib/libimage-jpeg-enc-omx-comp.so \
+    $(VENDOR_DEVICE_FOLDER)/lib/libimage-omx-common.so:system/lib/libimage-omx-common.so \
+    $(VENDOR_DEVICE_FOLDER)/lib/libOmxAacDec.so:system/lib/libOmxAacDec.so \
+    $(VENDOR_DEVICE_FOLDER)/lib/libOmxWmaDec.so:system/lib/libOmxWmaDec.so \
+    $(VENDOR_DEVICE_FOLDER)/lib/libQSEEComAPI.so:system/lib/libQSEEComAPI.so \
+    $(VENDOR_DEVICE_FOLDER)/lib/libxml.so:system/lib/libxml.so
 
 # Chromatix
 PRODUCT_COPY_FILES += \
@@ -195,6 +227,6 @@ PRODUCT_COPY_FILES += \
     $(VENDOR_DEVICE_FOLDER)/lib/libskyreset.so:system/lib/libskyreset.so \
     $(VENDOR_DEVICE_FOLDER)/lib/libsky_rftest.so:system/lib/libsky_rftest.so \
     $(VENDOR_DEVICE_FOLDER)/lib/libskytestclient.so:system/lib/libskytestclient.so \
+    $(VENDOR_DEVICE_FOLDER)/lib/libsky_touch.so:system/lib/libsky_touch.so \
     $(VENDOR_DEVICE_FOLDER)/lib/libsky_wifi.so:system/lib/libsky_wifi.so
-#   $(VENDOR_DEVICE_FOLDER)/lib/libsky_touch.so:system/lib/libsky_touch.so \
 
