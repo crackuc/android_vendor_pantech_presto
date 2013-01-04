@@ -213,11 +213,6 @@ PRODUCT_COPY_FILES += \
     $(VENDOR_DEVICE_FOLDER)/etc/wl/nvram.txt:system/etc/wl/nvram.txt \
     $(VENDOR_DEVICE_FOLDER)/lib/libhardware_legacy.so:system/lib/libhardware_legacy.so
 
-# Yamaha
-PRODUCT_COPY_FILES += \
-    $(VENDOR_DEVICE_FOLDER)/bin/geomagneticd:system/bin/geomagneticd \
-    $(VENDOR_DEVICE_FOLDER)/bin/orientationd:system/bin/orientationd
-
 # sky
 PRODUCT_COPY_FILES += \
     $(VENDOR_DEVICE_FOLDER)/lib/libsky_access_nand.so:system/lib/libsky_access_nand.so \
