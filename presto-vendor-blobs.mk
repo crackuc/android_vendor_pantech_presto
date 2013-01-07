@@ -169,6 +169,11 @@ PRODUCT_COPY_FILES += \
     $(VENDOR_DEVICE_FOLDER)/lib/liboem_rapi.so:system/lib/liboem_rapi.so \
     $(VENDOR_DEVICE_FOLDER)/lib/liboem_rapi_fusion.so:system/lib/liboem_rapi_fusion.so
 
+# Misc
+PRODUCT_COPY_FILES += \
+    $(VENDOR_DEVICE_FOLDER)/lib/libnv_fusion.so:system/lib/libnv_fusion.so \
+    $(VENDOR_DEVICE_FOLDER)/lib/libsyslog.so:system/lib/libsyslog.so
+
 # Radio
 PRODUCT_COPY_FILES += \
     $(VENDOR_DEVICE_FOLDER)/bin/ks:system/bin/ks \
