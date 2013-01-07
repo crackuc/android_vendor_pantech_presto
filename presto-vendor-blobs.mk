@@ -25,7 +25,6 @@ PRODUCT_COPY_FILES += \
 
 # Prebuilt libraries
 PRODUCT_COPY_FILES += \
-    $(VENDOR_DEVICE_FOLDER)/lib/libgenlock.so:system/lib/libgenlock.so \
     $(VENDOR_DEVICE_FOLDER)/lib/libQcomUI.so:system/lib/libQcomUI.so
 
 # Prebuilt libraries from CodeAurora
@@ -51,7 +50,6 @@ PRODUCT_COPY_FILES += \
     $(VENDOR_DEVICE_FOLDER)/etc/firmware/yamato_pm4.fw:system/etc/firmware/yamato_pm4.fw \
     $(VENDOR_DEVICE_FOLDER)/lib/egl/eglsubAndroid.so:system/lib/egl/eglsubAndroid.so \
     $(VENDOR_DEVICE_FOLDER)/lib/egl/libEGL_adreno200.so:system/lib/egl/libEGL_adreno200.so \
-    $(VENDOR_DEVICE_FOLDER)/lib/egl/libGLES_android.so:system/lib/egl/libGLES_android.so \
     $(VENDOR_DEVICE_FOLDER)/lib/egl/libGLESv1_CM_adreno200.so:system/lib/egl/libGLESv1_CM_adreno200.so \
     $(VENDOR_DEVICE_FOLDER)/lib/egl/libGLESv2_adreno200.so:system/lib/egl/libGLESv2_adreno200.so \
     $(VENDOR_DEVICE_FOLDER)/lib/egl/libGLESv2S3D_adreno200.so:system/lib/egl/libGLESv2S3D_adreno200.so \
@@ -77,9 +75,7 @@ PRODUCT_COPY_FILES += \
     $(VENDOR_DEVICE_FOLDER)/bin/battery_charging:system/bin/battery_charging \
     $(VENDOR_DEVICE_FOLDER)/bin/bridgemgrd:system/bin/bridgemgrd \
     $(VENDOR_DEVICE_FOLDER)/bin/btnvtool:system/bin/btnvtool \
-    $(VENDOR_DEVICE_FOLDER)/bin/dalvikvm:system/bin/dalvikvm \
     $(VENDOR_DEVICE_FOLDER)/bin/ds_fmc_appd:system/bin/ds_fmc_appd \
-    $(VENDOR_DEVICE_FOLDER)/bin/e2fsck:system/bin/e2fsck \
     $(VENDOR_DEVICE_FOLDER)/bin/hci_qcomm_init:system/bin/hci_qcomm_init \
     $(VENDOR_DEVICE_FOLDER)/bin/mm-qcamera-daemon:system/bin/mm-qcamera-daemon \
     $(VENDOR_DEVICE_FOLDER)/bin/nl_listener:system/bin/nl_listener \
@@ -104,8 +100,6 @@ PRODUCT_COPY_FILES += \
     $(VENDOR_DEVICE_FOLDER)/lib/libOlaEngine.so:system/lib/libOlaEngine.so
 
 PRODUCT_COPY_FILES += \
-    $(VENDOR_DEVICE_FOLDER)/lib/libcamera_client.so:system/lib/libcamera_client.so \
-    $(VENDOR_DEVICE_FOLDER)/lib/libcameraservice.so:system/lib/libcameraservice.so \
     $(VENDOR_DEVICE_FOLDER)/lib/libCommandSvc.so:system/lib/libCommandSvc.so \
     $(VENDOR_DEVICE_FOLDER)/lib/libconfigdb.so:system/lib/libconfigdb.so \
     $(VENDOR_DEVICE_FOLDER)/lib/libdrmdiag.so:system/lib/libdrmdiag.so \
@@ -114,7 +108,6 @@ PRODUCT_COPY_FILES += \
     $(VENDOR_DEVICE_FOLDER)/lib/libdsprofile.so:system/lib/libdsprofile.so \
     $(VENDOR_DEVICE_FOLDER)/lib/libdss.so:system/lib/libdss.so \
     $(VENDOR_DEVICE_FOLDER)/lib/libdsucsd.so:system/lib/libdsucsd.so \
-    $(VENDOR_DEVICE_FOLDER)/lib/libI420colorconvert.so:system/lib/libI420colorconvert.so \
     $(VENDOR_DEVICE_FOLDER)/lib/libimage-jpeg-dec-omx-comp.so:system/lib/libimage-jpeg-dec-omx-comp.so \
     $(VENDOR_DEVICE_FOLDER)/lib/libimage-jpeg-enc-omx-comp.so:system/lib/libimage-jpeg-enc-omx-comp.so \
     $(VENDOR_DEVICE_FOLDER)/lib/libimage-omx-common.so:system/lib/libimage-omx-common.so \
@@ -167,10 +160,6 @@ PRODUCT_COPY_FILES += \
 
 # HAL
 PRODUCT_COPY_FILES += \
-    $(VENDOR_DEVICE_FOLDER)/lib/hw/copybit.msm8660.so:system/lib/hw/copybit.msm8660.so \
-    $(VENDOR_DEVICE_FOLDER)/lib/hw/gralloc.default.so:system/lib/hw/gralloc.default.so \
-    $(VENDOR_DEVICE_FOLDER)/lib/hw/gralloc.msm8660.so:system/lib/hw/gralloc.msm8660.so \
-    $(VENDOR_DEVICE_FOLDER)/lib/hw/lights.msm8660.so:system/lib/hw/lights.msm8660.so \
     $(VENDOR_DEVICE_FOLDER)/lib/hw/sensors.msm8660.so:system/lib/hw/sensors.msm8660.so
 
 # Mediaserver
@@ -187,7 +176,6 @@ PRODUCT_COPY_FILES += \
     $(VENDOR_DEVICE_FOLDER)/bin/qcks:system/bin/qcks \
     $(VENDOR_DEVICE_FOLDER)/bin/qmiproxy:system/bin/qmiproxy \
     $(VENDOR_DEVICE_FOLDER)/bin/qmuxd:system/bin/qmuxd \
-    $(VENDOR_DEVICE_FOLDER)/bin/rild:system/bin/rild \
     $(VENDOR_DEVICE_FOLDER)/bin/rmt_storage:system/bin/rmt_storage \
     $(VENDOR_DEVICE_FOLDER)/lib/libdsi_netctrl.so:system/lib/libdsi_netctrl.so \
     $(VENDOR_DEVICE_FOLDER)/lib/libdsutils.so:system/lib/libdsutils.so \
@@ -198,20 +186,16 @@ PRODUCT_COPY_FILES += \
     $(VENDOR_DEVICE_FOLDER)/lib/libqmi.so:system/lib/libqmi.so \
     $(VENDOR_DEVICE_FOLDER)/lib/libqmiservices.so:system/lib/libqmiservices.so \
     $(VENDOR_DEVICE_FOLDER)/lib/libqueue.so:system/lib/libqueue.so \
-    $(VENDOR_DEVICE_FOLDER)/lib/libreference-ril.so:system/lib/libreference-ril.so \
     $(VENDOR_DEVICE_FOLDER)/lib/libril-qc-qmi-1.so:system/lib/libril-qc-qmi-1.so \
     $(VENDOR_DEVICE_FOLDER)/lib/libril-qcril-hook-oem.so:system/lib/libril-qcril-hook-oem.so \
-    $(VENDOR_DEVICE_FOLDER)/lib/libril.so:system/lib/libril.so
 
 # wifi
 PRODUCT_COPY_FILES += \
-    $(VENDOR_DEVICE_FOLDER)/etc/wifi/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf \
     $(VENDOR_DEVICE_FOLDER)/etc/wl/bcm43291_apsta.bin:system/etc/wl/bcm43291_apsta.bin \
     $(VENDOR_DEVICE_FOLDER)/etc/wl/bcm43291_mfg.bin:system/etc/wl/bcm43291_mfg.bin \
     $(VENDOR_DEVICE_FOLDER)/etc/wl/bcm43291_p2p.bin:system/etc/wl/bcm43291_p2p.bin \
     $(VENDOR_DEVICE_FOLDER)/etc/wl/bcm43291.bin:system/etc/wl/bcm43291.bin \
-    $(VENDOR_DEVICE_FOLDER)/etc/wl/nvram.txt:system/etc/wl/nvram.txt \
-    $(VENDOR_DEVICE_FOLDER)/lib/libhardware_legacy.so:system/lib/libhardware_legacy.so
+    $(VENDOR_DEVICE_FOLDER)/etc/wl/nvram.txt:system/etc/wl/nvram.txt
 
 # Yamaha
 PRODUCT_COPY_FILES += \
@@ -234,4 +218,3 @@ PRODUCT_COPY_FILES += \
     $(VENDOR_DEVICE_FOLDER)/lib/libskytestclient.so:system/lib/libskytestclient.so \
     $(VENDOR_DEVICE_FOLDER)/lib/libsky_touch.so:system/lib/libsky_touch.so \
     $(VENDOR_DEVICE_FOLDER)/lib/libsky_wifi.so:system/lib/libsky_wifi.so
-
