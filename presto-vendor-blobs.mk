@@ -34,8 +34,7 @@ PRODUCT_COPY_FILES += \
     $(VENDOR_DEVICE_FOLDER)/lib/libmmosal.so:system/lib/libmmosal.so \
     $(VENDOR_DEVICE_FOLDER)/lib/libmmparser_divxdrmlib.so:system/lib/libmmparser_divxdrmlib.so \
     $(VENDOR_DEVICE_FOLDER)/lib/libmmparser.so:system/lib/libmmparser.so \
-    $(VENDOR_DEVICE_FOLDER)/lib/libqc-opt.so:system/lib/libqc-opt.so \
-    $(VENDOR_DEVICE_FOLDER)/lib/libv8.so:system/lib/libv8.so
+    $(VENDOR_DEVICE_FOLDER)/lib/libqc-opt.so:system/lib/libqc-opt.so
 
 # Adreno
 PRODUCT_COPY_FILES += \
@@ -192,15 +191,7 @@ PRODUCT_COPY_FILES += \
     $(VENDOR_DEVICE_FOLDER)/lib/libqmiservices.so:system/lib/libqmiservices.so \
     $(VENDOR_DEVICE_FOLDER)/lib/libqueue.so:system/lib/libqueue.so \
     $(VENDOR_DEVICE_FOLDER)/lib/libril-qc-qmi-1.so:system/lib/libril-qc-qmi-1.so \
-    $(VENDOR_DEVICE_FOLDER)/lib/libril-qcril-hook-oem.so:system/lib/libril-qcril-hook-oem.so \
-
-# wifi
-PRODUCT_COPY_FILES += \
-    $(VENDOR_DEVICE_FOLDER)/etc/wl/bcm43291_apsta.bin:system/etc/wl/bcm43291_apsta.bin \
-    $(VENDOR_DEVICE_FOLDER)/etc/wl/bcm43291_mfg.bin:system/etc/wl/bcm43291_mfg.bin \
-    $(VENDOR_DEVICE_FOLDER)/etc/wl/bcm43291_p2p.bin:system/etc/wl/bcm43291_p2p.bin \
-    $(VENDOR_DEVICE_FOLDER)/etc/wl/bcm43291.bin:system/etc/wl/bcm43291.bin \
-    $(VENDOR_DEVICE_FOLDER)/etc/wl/nvram.txt:system/etc/wl/nvram.txt
+    $(VENDOR_DEVICE_FOLDER)/lib/libril-qcril-hook-oem.so:system/lib/libril-qcril-hook-oem.so
 
 # Yamaha
 PRODUCT_COPY_FILES += \
