@@ -29,7 +29,6 @@ PRODUCT_COPY_FILES += \
 
 # Prebuilt libraries from CodeAurora
 PRODUCT_COPY_FILES += \
-    $(VENDOR_DEVICE_FOLDER)/lib/libDivxDrm.so:system/lib/libDivxDrm.so \
     $(VENDOR_DEVICE_FOLDER)/lib/libmm-color-convertor.so:system/lib/libmm-color-convertor.so \
     $(VENDOR_DEVICE_FOLDER)/lib/libmmosal.so:system/lib/libmmosal.so \
     $(VENDOR_DEVICE_FOLDER)/lib/libmmparser_divxdrmlib.so:system/lib/libmmparser_divxdrmlib.so \
